@@ -17,6 +17,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name : Run unit test
+        run: pytest
+
       # - name: Docker build
       #   run : docker build -t aynurose/python-app:1.0.0 .
 
